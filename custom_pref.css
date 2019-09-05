@@ -1,0 +1,61 @@
+/* PC画面の場合 */
+@media (min-width: 992px) {
+ body {
+   font-size: 1.0rem;
+ }
+}
+
+/* モバイルの場合 */
+@media (max-width: 500px) {
+ body {
+   font-size: 0.6rem !important;
+ }
+ table td,th{
+   padding: 5px !important;
+
+ }
+
+}
+
+html {
+  display: block;
+
+}
+
+body {
+  padding-top: 70px;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.table-noscroll {
+  overflow-y: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: auto !important;
+}
+table td, table th {
+  padding: 10px;
+}
+table th {
+  background-color: #eee;
+}
+
+.th-date{
+  width: 20%;
+}
+
+.th-title{
+  width: 30%;
+}
+
+.th-name{
+  width: 50%;
+}

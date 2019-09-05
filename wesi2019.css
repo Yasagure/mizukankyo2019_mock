@@ -1,0 +1,472 @@
+
+/* universal */
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.3em;
+  letter-spacing: -2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+h2 {
+  font-size: 1em;
+  letter-spacing: -2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* footer */
+
+$gray-medium-light: #eaeaea;
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: red;
+    &:hover {
+      color: red;
+      font-weight: bold;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* forms 繝ｦ繝ｼ繧ｶ繝ｼ逋ｻ骭ｲ繝輔か繝ｼ繝� */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input[type=radio] {
+  width:auto;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+/* Datum show逕ｨ縺ｮcss */
+#map {
+	height:400px;
+	width: 100%;
+}
+
+p.latlng {
+  font-size: 0.8em;
+  text-align:right;
+  margin-bottom: 0px;
+}
+
+table.basic-info {
+  width: 100%;
+  tr td:first-child {
+    background: honeydew;
+  }
+  tr td:nth-child(2){
+    background: lightgray;
+  }
+}
+
+td.value{
+	text-align:right;
+}
+
+table.detail {
+  width: 100%;
+  tr:nth-child(even) {
+      background: honeydew;
+  }
+  tr:nth-child(odd) {
+      background: lightgray;
+  }
+}
+
+/* survey_show蜷代￠縺ｮcss */
+#extra_map_form {
+  margin-top: 2em;
+}
+td.value{
+	text-align:right;
+}
+table.surveys{
+  width: 100%;
+  text-align: center;
+  padding: 0px 10px;
+
+  vertical-align: middle;
+
+  border-collapse:collapse;
+
+}
+
+table.search tr td{
+  border:solid 1px;
+}
+
+table.surveys tr {
+  border:solid 1px;
+  th{
+    text-align:center;
+  }
+}
+
+.blank_cell{
+  padding:1em 0em;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.floating {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.date_search_form{
+  white-space: nowrap;
+}
+
+/* survey_new蜷代￠縺ｮcss */
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+.height100 {
+  margin: 0;
+}
+
+.form_bg{
+  background: #cc9999;
+}
+
+.red {
+  color: red;
+}
+
+
+
+
+/*譌･譎らｷｯ蠎ｦ邨悟ｺｦ縺ｮ霑ｽ蜉�繝輔か繝ｼ繝�*/
+table.exform{
+  margin-top: 1.5em;
+  width: 100%;
+  text-align: center;
+  padding: 0px 10px;
+
+  vertical-align: middle;
+
+  border-collapse:collapse;
+  tr td{
+    border:solid 1px;
+  }
+  tr th{
+    border:solid 1px;
+  }
+}
+
+.align-right{
+  text-align: right;
+}
+.align-center{
+  text-align: center;
+}
+.margin-top{
+  margin-top:1.5em;
+}
+
+/* data#show 縺ｨ survey#new 縺ｮmap */
+
+#sub-map {
+	height:400px;
+	width: 100%;
+}
+.latlng {
+  white-space: nowrap;
+  font-size: 0.8em;
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+/* TOP繝壹�繧ｸ逕ｨ */
+
+.top-image {
+  width:100%;
+  margin-bottom: 5px;
+  border: solid;
+  border-color: #eea236;
+}
+.top-button {
+  width:100%;
+}
+.top-strong {
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+    font-weight: bold;
+}
+
+.top-item-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+	border: 1px solid black;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.top-inner-item {
+  margin: 1em;
+}
+
+/* 繝倥Ν繝励�繝ｼ繧ｸ逕ｨ */
+
+.item-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+	border: 1px solid black;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+.inner-item {
+  margin: 2em;
+}
+
+.item-sub-title {
+  font-size: 1.0em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+ol.list_parentheses{
+  padding:0 0 0 2em;
+  margin:0;
+}
+
+ol.list_parentheses li{
+  list-style-type:none;
+  list-style-position:inside;
+  counter-increment: cnt;
+}
+ol.list_parentheses li:before{
+  display: marker;
+  content: "(" counter(cnt) ") ";
+}
+
+.border-solid {
+	border: 2px solid black;
+	margin: 1em auto 2em;
+// 	margin-top: 1em;
+// 	margin-bottom: 2em;
+}
+
+.picture {
+  max-width: 400px;
+  // max-height: 200px;
+}
+
+.img-responsive {
+  width:100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* static_page_mapA,B*/
+.head-button {
+  font-size: 0.5em;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* mapA */
+
+#mapA-map {
+  min-width: 600px;
+  width: 100%;
+  height: 100%;
+}
+.mapA-col-height {
+  height: 100%;
+}
+.mapA-row-height {
+  height: 80%;
+}
+.mapA-charts {
+  width: 250px;
+  height: 280px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.mapA-charts::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+.mapA-charts::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.mapA-infoBox {
+	position: relative;
+	width: 250px;
+ 	// padding: 25px 30px;
+	border: 1px solid #CCC;
+	background-color: #fff;
+}
+.mapA-infoBox:before {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	width: 23px;
+	height: 20px;
+	transform: translate(-50%, 0);
+	background: url(infoBoxTip.png) no-repeat 0 0;
+	content: '';
+}
+
+.mapA-infoBox-cluster {
+	position: relative;
+	width: 250px;
+ 	// padding: 25px 30px;
+	border: 1px solid #CCC;
+	background-color: #fff;
+}
+.mapA-infoBox-cluster:before {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	bottom: -26px;
+	width: 30px;
+	height: 26px;
+	transform: translate(-50%, 0);
+	background: url(infoBoxTipCluster.png) no-repeat 0 0;
+	content: '';
+}
+
+/* mapB */
+
+#mapB-map {
+  // max-height: 600px;
+  // min-heihgt: 400px;
+  height: 100%;
+  width: 100%;
+}
+.mapB-col-height {
+  height: 100%;
+}
+.mapB-row-height {
+  height: 80%;
+}
+#mapB-charts {
+  width: 100%;
+  overflow: scroll;
+  height: 100%;
+}

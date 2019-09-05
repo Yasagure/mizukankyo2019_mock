@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>データ | みずしるべ on Web</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="TB0W6ErCLYcVhlbVxtASQiLR5s6zjq6HvD3bpdG7XqL1d83uOBy40h8tX9zBbxbhp9Y+vqvKy8ic2U4WhJRLjw==" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="wesi2019.css">
+
+
+    <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  </script>
+<![endif]-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">みずしるべ on Web(試験運用中)</a>
+      <!--現在マップがA-->
+      <!--現在マップがB-->
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/surveys">調査一覧</a></li>
+
+
+          <li><a href="/login">ログイン</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+    <div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <h1><a href="/surveys/8">虹貝川　サンプル</a>　＞　虹貝川上流の調査データ</h1>
+
+        <h2><a href="file:///E:/%E6%B0%B4%E7%92%B0%E5%A2%832019/mizukankyo/japan_map_mock.html">基本情報</a></h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6 col-md-5 col-md-offset-1">
+        <table class="basic-info">
+            <tr>
+                <td>調査者名</td>
+                <td>青森太郎</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-xs-6 col-md-5">
+        <table class="basic-info">
+            <tr>
+                <td>調査日時</td>
+                <td>2017-08-01 22:30:00 +0900</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <p class="latlng"><img src="/assets/ping-40255b8b645cba44d5dbaa5c53febbfad62056adb67dc559ef50752e06e2cdf7.png" alt="Ping" />40.496468, 140.558675</p>
+        <div id="sub-map"></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-5 col-md-offset-1">
+    	<h2>自然なすがた</h2>
+        <table class="detail">
+            <tr>
+                <td class="key">水の流れはゆたかですか？</td>
+                <td class="value">2.5</td>
+            </tr>
+            <tr>
+                <td class="key">岸のようすは自然らしいですか？</td>
+                <td class="value">2.7</td>
+            </tr>
+            <tr>
+                <td class="key">魚が川をかさのぼれるだろうか？</td>
+                <td class="value">3.0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="col-xs-12 col-md-5">
+        <h2>豊かな生き物</h2>
+        <table class="detail">
+            <tr>
+                <td class="key">河原と水辺に植物がはえていますか？</td>
+                <td class="value">1.9</td>
+            </tr>
+        	<tr>
+                <td class="key">鳥がいますか？</td>
+                <td class="value">1.3</td>
+            </tr>
+            <tr>
+                <td class="key">魚がいますか？</td>
+                <td class="value">2.6</td>
+            </tr>
+            <tr>
+                <td class="key">川底に生き物がいますか？</td>
+                <td class="value">2.8</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-5 col-md-offset-1">
+    	<h2>水のきれいさ</h2>
+        <table class="detail">
+            <tr>
+                <td class="key">水は透明ですか？</td>
+                <td class="value">1.7</td>
+            </tr>
+            <tr>
+                <td class="key">水はくさくないですか？</td>
+                <td class="value">2.9</td>
+            </tr>
+            <tr>
+                <td class="key">水はきれいですか？</td>
+                <td class="value">2.5</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="col-xs-12 col-md-5">
+    	<h2>快適な水辺</h2>
+        <table class="detail">
+            <tr>
+                <td class="key">川やまわりのけしきは美しいですか？</td>
+                <td class="value">3.0</td>
+            </tr>
+	        <tr>
+                <td class="key">ごみが目につきますか？</td>
+                <td class="value">1.8</td>
+            </tr>
+            <tr>
+                <td class="key">水にふれてみたいですか？</td>
+                <td class="value">1.5</td>
+            </tr>
+            <tr>
+                <td class="key">どんなにおいを感じますか？</td>
+                <td class="value">2.3</td>
+            </tr>
+            <tr>
+                <td class="key">どんな音が聞こえますか？</td>
+                <td class="value">2.4</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-5 col-md-offset-1">
+    	<h2>地域とのつながり</h2>
+        <table class="detail">
+            <tr>
+                <td class="key">川にまつわる話を聞いたことがありますか？</td>
+                <td class="value">2.1</td>
+            </tr>
+            <tr>
+                <td class="key">水辺に近づきやすいですか？</td>
+                <td class="value">1.6</td>
+            </tr>
+            <tr>
+                <td class="key">多くの人が利用していますか？</td>
+                <td class="value">2.1</td>
+            </tr>
+	        <tr>
+                <td class="key">産業などの活用</td>
+                <td class="value">2.1</td>
+            </tr>
+	        <tr>
+                <td class="key">環境の活動</td>
+                <td class="value">1.3</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="col-xs-12 col-md-5">
+    	<h2>総合平均</h2>
+        <table class="detail">
+            <tr>
+                <td class="key">自然なすがた</td>
+                <td class="value">1.9</td>
+            </tr>
+	        <tr>
+                <td class="key">豊かな生き物</td>
+                <td class="value">1.2</td>
+            </tr>
+            <tr>
+                <td class="key">水のきれいさ</td>
+                <td class="value">2.7</td>
+            </tr>
+            <tr>
+                <td class="key">快適な水辺</td>
+                <td class="value">1.2</td>
+            </tr>
+	        <tr>
+                <td class="key">地域とのつながり</td>
+                <td class="value">2.4</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+function initForDatumShow() {
+  var map = new google.maps.Map(document.getElementById('sub-map'), {
+    zoom: 16,
+    center: new google.maps.LatLng( 40.496468, 140.558675 )
+  });
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng( 40.496468, 140.558675 ),
+    map: map
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeMRmIOGukQd3Eb-h7vfPD2c3f1AudOgs&amp;language=ja&amp;region=JP&amp;callback=initForDatumShow" async="async" defer="defer"></script>
+
+      <footer class="footer">
+  <small>
+    水環境学会東北支部
+  </small>
+  <nav>
+    <ul>
+      <li><a href="/about">このサイトについて ＆ 使い方</a></li>
+    </ul>
+  </nav>
+</footer>
+
+    </div>
+  </body>
+</html>
