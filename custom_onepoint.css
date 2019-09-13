@@ -1,0 +1,110 @@
+/* PC画面の場合 */
+@media (min-width: 992px) {
+ html {
+   display: block;
+ }
+
+ body {
+   padding-top: 70px;
+      font-size: 1.0rem;
+ }
+
+ .img-responsive {
+   display: block;
+   height: auto;
+   max-width: 100%;
+ }
+
+ .table-noscroll {
+   overflow-y: hidden;
+ }
+
+ table {
+   width: auto !important;
+ }
+ table td, table th {
+   padding: 10px;
+ }
+ table th {
+   background-color: #eee;
+ }
+
+ .reseach-th-name{
+   width: 100px;
+ }
+
+ .reseach-th-date{
+   width: 120px;
+ }
+
+ .reseach-th-person{
+   width: 100px;
+ }
+
+ .reseach-th-remarks{
+   width: 180px;
+ }
+
+
+}
+
+/* モバイルの場合 */
+@media (max-width: 500px) {
+ body {
+   font-size: 0.6rem !important;
+ }
+ table td,th{
+   padding: 5px !important;
+
+ }
+
+
+html {
+  display: block;
+
+}
+
+body {
+  padding-top: 70px;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.table-noscroll {
+  overflow-y: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: auto !important;
+}
+
+/* table td, table th {
+  padding: 5px !important;
+
+} */
+table th {
+  background-color: #eee;
+}
+
+.reseach-th-name{
+  width: 70px;
+}
+
+.reseach-th-date{
+  width: 85px;
+}
+
+.reseach-th-person{
+  width: 70px;
+}
+
+.reseach-th-remarks{
+  width: 180px;
+}
+}
